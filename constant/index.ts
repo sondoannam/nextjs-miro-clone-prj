@@ -10,3 +10,5 @@ export const COLORS: Color[] = [
   { r: 0, g: 0, b: 0 },
   { r: 255, g: 255, b: 255 },
 ];
+
+export const SELECTION_NET_STRETCH_HOLD = 5;
