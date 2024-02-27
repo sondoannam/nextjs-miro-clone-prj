@@ -1,5 +1,7 @@
 import { Color } from "@/types/canvas";
 
+export const MAX_LAYERS = 100;
+
 export const COLORS: Color[] = [
   { r: 243, g: 82, b: 35 },
   { r: 255, g: 249, b: 177 },
