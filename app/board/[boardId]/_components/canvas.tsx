@@ -228,7 +228,14 @@ export const Canvas = ({ boardId }: CanvasProps) => {
 
       setMyPresence({ cursor: current });
     },
-    [camera, canvasState, resizeSelectedLayer, transleteSelectedLayer]
+    [
+      camera,
+      canvasState,
+      resizeSelectedLayer,
+      transleteSelectedLayer,
+      startMultiSelection,
+      updateSelectionNet,
+    ]
   );
 
   const onPointerLeave = useMutation(({ setMyPresence }) => {
@@ -259,7 +266,6 @@ export const Canvas = ({ boardId }: CanvasProps) => {
         canvasState.mode === CanvasMode.Pressing
       ) {
         unselectLayers();
-
         setCanvasState({ mode: CanvasMode.None });
       } else if (canvasState.mode === CanvasMode.Inserting) {
         insertLayer(canvasState.layerType, point);

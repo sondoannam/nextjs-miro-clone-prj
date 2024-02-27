@@ -12,3 +12,7 @@ export const COLORS: Color[] = [
 ];
 
 export const SELECTION_NET_STRETCH_HOLD = 5;
+
+export const MAX_FONT_SIZE = 96;
+export const SCALE_FACTOR_TEXT = 0.5;
+export const SCALE_FACTOR_NOTE = 0.15;
